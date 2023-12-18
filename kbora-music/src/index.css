@@ -1,6 +1,21 @@
+@import url(../src/shared/globar.css);
 body{
   background-color: black;
   color: antiquewhite;
   box-sizing: border-box;
   margin: 0;
+  padding: 0;
+  width: 100vw;
+  
 }
+html{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* colour codes 
+1D3557
+457B9D
+A8DADC
+F1FAEE
+E63946*/

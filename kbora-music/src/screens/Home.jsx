@@ -8,6 +8,7 @@ import Player from './Player'
 import Favorite from './Favorite'
 import Sidebar from '../components/Sidebar'
 import LogIn from './LogIn'
+import { setClientToken } from '../Spotify'
 
 export default function Home() {
   const [token,setToken] = useState('');
@@ -19,10 +20,12 @@ export default function Home() {
     if(!token && hash){
       const _token = hash.split("&")[0].split("=")[1];
       window.localStorage.setItem("token",_token)
-      setToken(_token)
+      setToken(_token);
+      setClientToken(_token)
     } 
     else{
-      setToken(token)
+      setToken(token);
+      setClientToken(token)
     }
    
   },[])

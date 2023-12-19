@@ -11,7 +11,7 @@ export default function LogIn() {
       <p className='login-p'>Used the api of Spotify</p>
         <img  className="login-logo" src={logo} alt="" />
         <h3 className='login-h3'>Click here to login with your spotify account</h3>
-        <a className='login-btn' href={loginEndPoint}>Log In</a>
+       <div className='login-btn-box'><a className='login-btn' href={loginEndPoint}>Log In</a></div> 
     </div>
     </>
   )

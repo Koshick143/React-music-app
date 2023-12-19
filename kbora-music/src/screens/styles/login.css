@@ -1,0 +1,50 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Rubik+Doodle+Shadow&family=Whisper&display=swap');
+
+.login-box{
+    width: 50vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: antiquewhite;
+    border-radius: 50px;
+    position: fixed;
+    top: 10%;
+    left: 25%;
+    color: black;
+}
+.login-logo{
+    width: 200px;
+    margin: 20px;
+}
+.login-h1{
+    font-family: "Pacifico";
+    font-weight: 200;
+}
+.login-p{
+    margin: 0;
+    padding: 0;
+    color: rgb(12, 12, 83);
+}
+.login-h3,.login-p{
+    font-family:"Pacifico" ;
+    font-weight: 400;
+    font-size: larger;
+}
+.login-h3{
+    margin: 0;
+}
+
+
+.login-btn{
+    text-decoration: none;
+    color: rgb(21, 9, 64);
+    font-size: x-large;
+    margin: 20px;
+    font-family: 'Pacifico';
+    padding: 10px;
+}
+.login-btn:hover{
+    scale: 1.3 ;
+}

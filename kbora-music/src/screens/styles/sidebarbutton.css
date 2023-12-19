@@ -13,15 +13,17 @@ a{
     flex-direction: column;
     color: antiquewhite;
     margin: 5px;
+    padding-top: 3px;
+    padding-bottom: 0;
 }
 .btn-body:hover{
-    color:rgba(42, 101, 42, 0.497)  ;
+    color:rgba(42, 72, 101, 0.497)  ;
 }
  .active{
     background-color: rgba(250, 235, 215, 0.682);
-    color:rgba(42, 101, 42, 0.886) ;
+    color:rgba(42, 72, 101, 0.689)  ;
 }
 .btn-title{
-    margin: 4px auto;
+    margin: 2px auto;
     font-weight: 600;
 }

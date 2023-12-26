@@ -23,7 +23,7 @@ const playPlaylist = (id) => {
 
   return (
     <div className='screen'>
-      <div className='library-container'>
+     <div className='library-container'>
       {playlist?.map((list) => (
         <div key={list.id}onClick={()=> playPlaylist(list.id)} className='playlist-card'>
           <img className='playlist-img' src={list.images[0].url} alt="Playlist-Img" />

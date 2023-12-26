@@ -4,10 +4,8 @@ import SideBarButton from './SideBarButton'
 
 import { MdLibraryMusic } from "react-icons/md";
 import { CiLogout } from "react-icons/ci";
-import { FcLike } from "react-icons/fc";
 import { TbPlayerPlayFilled } from "react-icons/tb";
-import { FaFire } from "react-icons/fa";
-import { MdFeed } from "react-icons/md";
+import { IoSearchSharp } from "react-icons/io5";
 import apiClient from '../Spotify';
 
 export default function Sidebar() {
@@ -18,16 +16,16 @@ export default function Sidebar() {
      }) 
   },[])
 
+  const size = 25;
+
   return (
     <div className='side-bar'>
      <img  className="profile-img" src={image} alt='profileimg'/>
 
      <div>
-      <SideBarButton title="Trending" to="/Trending" icon={<FaFire size={100} />} />
-      <SideBarButton title="Feed" to="/Feed" icon={<MdFeed size={90}/>} />
-      <SideBarButton title="player" to="/Player" icon={<TbPlayerPlayFilled size={100}/>} />
-      <SideBarButton title="Liked" to="/Favorite" icon={<FcLike size={90}/>} />
-      <SideBarButton title="Library" to="/Library" icon={<MdLibraryMusic size={80}/>} />
+      <SideBarButton title="Search" to="/Search" icon={< IoSearchSharp size={size}/>} />
+      <SideBarButton title="player" to="/Player" icon={<TbPlayerPlayFilled size={size}/>} />
+      <SideBarButton title="Library" to="/Library" icon={<MdLibraryMusic size={size}/>} />
      </div>
      <SideBarButton title="LogOut" to="" icon={<CiLogout size={70}/>} />
     </div>

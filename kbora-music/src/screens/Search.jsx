@@ -6,7 +6,7 @@ import "./styles/search.css";
 const Search = () => {
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState(null);
-  const navigate = useNavigate();
+ 
 
   const search = async () => {
     if (!searchQuery) {
@@ -15,12 +15,15 @@ const Search = () => {
     }
 
     try {
-      const response = await APIKit.get(`search?q=${encodeURIComponent(searchQuery)}&type=album,track,artist`);
+      const response = await APIKit.get(`search?q=${searchQuery}&type=album,track,artist`);
       console.log('working for  ' + searchQuery);
       console.log(response.data);
       setSearchResults(response.data);
       setSearchQuery('')
-    } catch (error) {
+    } 
+    
+    catch (error) {
+      alert('Result not Found  (api not perfectly working ) try another query')
       console.error('Error:', error.message);
     }
   };
@@ -31,6 +34,7 @@ const Search = () => {
     }
   };
 
+  const navigate = useNavigate();
 
   const playPlaylist = (id) => {
     navigate('/Player',{state : {id: id}})
@@ -48,7 +52,7 @@ const Search = () => {
           onKeyPress={handleKeyPress}
           onChange={(e) => setSearchQuery(e.target.value)}
         />
-        <button onClick={search}>Search</button>
+        <button className='search-button' onClick={search}>Search</button>
       </div>
       
       <div className='search-results-container'>

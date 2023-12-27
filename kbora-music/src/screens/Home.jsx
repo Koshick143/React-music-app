@@ -7,6 +7,7 @@ import Sidebar from '../components/Sidebar'
 import LogIn from './LogIn'
 import Search from './Search'
 import { setClientToken } from '../Spotify'
+import LogOut from './LogOut'
 
 export default function Home() {
   const [token,setToken] = useState('');
@@ -37,6 +38,7 @@ export default function Home() {
             <Route path='/Library' element={<Library/>}/>
             <Route path='/Player' element={<Player/>}/>
             <Route path='/Search' element={<Search/>}/>
+            <Route path='/LogOut' element={<LogOut/>}/>
         </Routes>
         </div>
        

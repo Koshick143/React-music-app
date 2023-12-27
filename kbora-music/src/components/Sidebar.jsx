@@ -27,7 +27,7 @@ export default function Sidebar() {
       <SideBarButton title="player" to="/Player" icon={<TbPlayerPlayFilled size={size}/>} />
       <SideBarButton title="Library" to="/Library" icon={<MdLibraryMusic size={size}/>} />
      </div>
-     <SideBarButton title="LogOut" to="" icon={<CiLogout size={70}/>} />
+     <SideBarButton title="LogOut" to="/LogOut" icon={<CiLogout size={70}/>} />
     </div>
   )
 }
